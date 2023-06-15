@@ -38,3 +38,14 @@ aside h3 {
 h1 {
     font-size: 50px;
 }
+
+aside {
+    position: relative;
+    z-index: 9;
+}
+
+.alert-warning {
+    float: left;
+    width: 400px;
+    text-align: left;
+}

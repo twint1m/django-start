@@ -6,6 +6,17 @@
     <div class="features">
         <h1>News</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, aspernatur id labore explicabo alias distinctio nam. Fuga aliquid quam explicabo.</p>
-        <button class="btn">Click</button>
+
+        {% if news %}
+            {% for el in news %}
+                <div class="alert alert-warning">
+                    <h3>{{ el.title }}</h3>
+                    <span>{{ el.anons }}</span>
+                    <p>{{ el.full_text }}</p>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>У вас не записей</p>
+        {% endif %}
     </div>
 {% endblock %}
