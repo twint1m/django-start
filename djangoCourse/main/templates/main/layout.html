@@ -1,11 +1,30 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
 </head>
 <body>
-    {% block content %}{% endblock %}
+    <aside>
+        <span class="logo">logotype</span>
+        <h3>Nav</h3>
+        <ul>
+            <li>
+                <a href="{% url 'home' %}">Main</a>
+            </li>
+            <li>
+                <a href="">Contact</a>
+            </li>
+            <li>
+                <a href="{% url 'about' %}">About Us</a>
+            </li>
+        </ul>
+    </aside>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
 </body>
 </html>
