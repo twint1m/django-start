@@ -1,5 +1,9 @@
 body {
-    background: #2c2c2c;
+    background: #2c2c2c !important;
+    color: #fff;
+}
+
+h1 {
     color: #fff;
 }
 
@@ -44,8 +48,27 @@ aside {
     z-index: 9;
 }
 
+* {
+    color: #fff !important;
+}
+
 .alert-warning {
     float: left;
     width: 400px;
     text-align: left;
+}
+body {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+    width: 500px;
+    float: left;
+    margin-left: 520px;
+    margin-top: 60px;
+}
+
+input, textarea {
+    color: #000 !important;
 }
